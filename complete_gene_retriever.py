@@ -53,8 +53,6 @@ def OnlyComplete(Dict,output):
         else:
             pass
 
-LoadedFile = LoadProtFiles(argv[1])
-OnlyComplete(LoadedFile)
 
 def get_parser():
     parser = argparse.ArgumentParser(description='Extracts theorteical complete \
@@ -76,12 +74,12 @@ if __name__ == "__main__":
     print("Writing complete genes into %s file" % args.o)
     OnlyComplete(LoadedFile, args.o)
 
-
-
-
-       
+  
 endtime = datetime.now()
 finaltime = endtime - StartTime 
+print("script is finished running. Please blast output file Vs other well known \
+        databases, cat output, and feed that output int\
+        strict_gene_isolation.py")
 print ("Total Time %s" % (finaltime))
 
      
